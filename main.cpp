@@ -80,15 +80,5 @@ int SecondsInHours(int hours)
 	return hours * 3600;
 }
 
-bool IsYearOfApocalypse(int year) {
 
-	if (year == 1992 || year == 2005 ||  year == 2011)
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
 
