@@ -46,3 +46,32 @@ void LaterInYear(int mounth1, int day1 , int mounth2 , int day2)
 	}
 }
 
+int DaysInYear(int year) 
+{
+	if (IsLeapYear(year))
+	{
+		return 366;
+	}
+	else
+	{
+		return 365;
+	}
+}
+
+int DaysInYearRange(int year1, int year2) 
+{
+	int sum = 0;
+
+	if (year1 > year2)
+	{
+		swap(year1,year2)
+	}
+
+	for (auto i = year1; i <= year2; i++)
+	{
+		sum += DaysInYear(i);
+	}
+
+	return sum;
+}
+
